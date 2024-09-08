@@ -31,7 +31,7 @@ body {
 
 .mid-nav a:hover {
     color: #ffffff;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #b0c4de;
 }
 
 
@@ -42,7 +42,7 @@ body {
 }
 
 .right-nav .icon:hover {
-    color: #f0f0f0;
+    color:#b0c4de;
 }
 
 
@@ -176,11 +176,10 @@ body {
 /* Work grid */
 .work-grid {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 20px;
-}
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 .work-item {
     text-decoration: none;
     color: #cbd5e1;
@@ -202,6 +201,20 @@ body {
 .work-item:hover img {
     transform: scale(1.05);
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures that all cards will stretch */
+    margin-bottom: 1rem;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
 
 /* Custom card styling */
 .custom-card {
